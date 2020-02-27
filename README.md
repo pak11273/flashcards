@@ -1,3 +1,11 @@
+## A Flashcard Program for language learners
+
+Accepts objects as data:
+
+```
+{ word: translation}
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
