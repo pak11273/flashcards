@@ -19,5 +19,5 @@ npm install // or yarn install
 ### Run the application
 
 ```
-`yarn start`
+yarn start
 ```
