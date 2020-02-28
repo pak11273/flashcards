@@ -1,4 +1,9 @@
 $gray: gray;
+$black: black;
+$white: white;
+$green: green;
+$orange: orange;
+$red: red;
 
 .App {
   text-align: center;
@@ -43,14 +48,36 @@ $gray: gray;
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.recallBtn {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  background: $green;
+  color: $white;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.next-btn {
+  background: $black;
+}
+.btn-50 {
+  background: $orange;
+}
+.blank {
+  background: $red;
 }
 
 @-webkit-keyframes App-logo-spin {
