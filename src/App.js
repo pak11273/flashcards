@@ -74,7 +74,8 @@ class App extends React.PureComponent {
               word,
               imgURL: data.hits[0] ? data.hits[0].largeImageURL : null,
               translation: this.state.langData[counter].translation
-            })
+            }, ()=>console.log(this.state.counter);
+            )
           })
         } else {
           let word = this.state.langData[0].word
@@ -128,14 +129,19 @@ class App extends React.PureComponent {
                 >
                   50% recall
                 </button>
-                <button className="recallBtn blank">blank</button>
+                <button
+                  className="recallBtn blank"
+                  onClick={this.handleRecall50}
+                >
+                  blank
+                </button>
               </div>
             </div>
           )}
           <p>{this.state.word}</p>
-          <button className="recallBtn next-btn" onClick={this.nextWord}>
+          {/* <button className="recallBtn next-btn" onClick={this.nextWord}>
             next
-          </button>
+          </button> */}
         </header>
       </div>
     )
