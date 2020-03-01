@@ -1,9 +1,4 @@
-$gray: gray;
-$black: black;
-$white: white;
-$green: green;
-$orange: orange;
-$red: red;
+@import "_settings.scss";
 
 .App {
   text-align: center;
@@ -79,6 +74,22 @@ $red: red;
 .blank {
   background: $red;
 }
+
+.reveal {
+  color: $black;
+  font-size: 2em;
+  height: 400px;
+  width: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: $white;
+}
+
+/* ANIMATION */
 
 @-webkit-keyframes App-logo-spin {
   from {
